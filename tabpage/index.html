@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body onload="javascript:init();">
+<div class="bkgImg"></div>
+<div class="con" id="hlpCon">
+    <div class="hlpTog" onClick="javascript:toggleHelp()">X</div>
+    <b>Usage:</b> [!command] [qry]
+    <p class="pInd">Input a query without a command to query the selected search engine.<br/>
+                    Input a command by itself to select the search engine.<br/>
+                    Input a command with a query to query the desired search engine.</p>
+    <b>Available Commands:</b>
+    <ul id="bngLst" class="pInd"></ul>
+</div>
+<div class="con" id="bseCon">
+    <div class="hlpTog" onClick="javascript:toggleHelp()">?</div>
+    <input type="text" id="qry" value="" placeholder="" onkeypress="javascript:handleQuery(event,this.value);" />
+    <div id="mnuCon"><ul id="mnu"></ul></div>
+</div>
+</body>
+</html>

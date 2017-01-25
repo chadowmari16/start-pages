@@ -1,0 +1,133 @@
+<head>
+	<title>Start</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div id="container">
+	<div id="header">
+		<h3 style="display: inline;"> <span class="green">&raquo; Search</span></h3>
+		<form method="get" action="https://www.google.ca/search">
+			<input type="text" name="q" \> 
+		</form>
+	</div>
+		
+	<div id="links">
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Work</span></h3>
+			<a href="http://gmail.com">Gmail</a>
+                       
+			<a href="https://docs.google.com/document/u/0/">Docs</a>
+			
+			<a href="https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG">MyConcordia</a>
+
+			<a href="https://politicalanthro.wordpress.com/">politicalanthro</a>
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Media</span></span></h3>
+			<a href="https://www.reddit.com/">reddit</a>
+			<a href="https://www.youtube.com/">youtube</a>	
+			<a href="https://www.netflix.com/">netflix</a>	
+                        
+				
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Torrents</span></span></h3>
+			
+			<a href="https://thepiratebay.se/">TPB</a>	
+			<a href="http://www.demonoid.pw/">Demonoid</a>
+			<a href="http://extratorrent.cc/">Extratorrent</a>
+                        <a href="http://1337x.to/">l337x</a>	
+                        <a href="https://instant.io/">instant.io</a>
+				
+		</div>
+
+		<div class="linksbox">
+			<h3> <span class="green">&raquo; Network</span></h3>
+			<a href="http://192.168.1.5">Stream</a>
+			<a href="http://192.168.1.1">Router</a>
+			<a href="http://192.168.2.1">Bell router</a>
+                        <a href="http://192.168.1.129/admin">DNS</a>
+                        <a href="http://192.168.1.101">NAS</a>
+                         
+		</div>
+	
+
+</div>
+
+
+
+
+
+
+<div id="links">
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Dev</span></h3>
+			<a href="https://github.com/chadowmari16">github</a>
+                        <a href="https://www.digitalocean.com/">Digitalocean</a>
+                        <a href="https://www.cloudflare.com/">cloudflare</a>
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Maps</span></span></h3>
+			<a href="https://www.google.ca/maps/@45.5163825,-73.6065395,14z">Google Maps</a>
+			<a href="https://citymapper.com/montreal">Citymapper</a>	
+			<a href="https://www.openstreetmap.org/#map=5/51.500/-0.100">OpenStreetMap</a>	
+                        
+				
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; Learn</span></span></h3>
+			<a href="https://linuxacademy.com/">Linux Academy</a>
+			<a href="https://www.codecademy.com/">Code Academy</a>	
+			<a href="https://www.cybrary.it/">Cybrary</a>	
+			<a href="http://overthewire.org/wargames/">Overthewire</a>	
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">&raquo; feed</span></span></h3>
+			<h1><a href="http://rss.cnn.com/rss/cnn_topstories.rss"></a></h1>
+
+		</div>
+	
+
+</div>
+
+
+
+
+	
+	<script type="text/javascript">
+
+function GetClock(){
+d = new Date();
+nhour  = d.getHours();
+nmin   = d.getMinutes();
+nsec   = d.getSeconds();
+
+if(nmin <= 9) {nmin = "0" +nmin;}
+if(nsec <= 9) {nsec = "0" +nsec;}
+
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+"";
+setTimeout("GetClock()", 1000);
+}
+window.onload=GetClock;
+</script>
+<div id="clockbox" style="font:80pt Helvetica Neue; font-weight: 100; color: rgba(255,255,255,0.35);text-align: center;"></div>
+
+</div>
+
+<script src="js/FeedEK.js"></script>
+
+
+
+</body>
+</html>

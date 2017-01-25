@@ -1,0 +1,269 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="bg" id="bg"></div>
+        <div id="toggleBlur">
+            <p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+        </div>
+        <div class="center">
+            <div id="header">
+                <div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
+                    <div id="weather"></div>
+                   <!-- <div id="weather2"></div>  -->
+                </div>
+                <div class="top" id="title">
+                    <p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">Hello!</p>
+                </div>
+            </div>
+           <div class="searchContainer">
+                <form class="searchForm search_0 searchView" method="get" action="https://google.com/search">
+                    <input class="searchBar search_0_i search_google" type="text" name="q" placeholder="Google" autofocus="autofocus" search_/>
+                </form>
+                <form class="searchForm search_1" method="get" action="https://youtube.com/results">
+                    <input class="searchBar search_1_i search_youtube" type="text" name="search_query" placeholder="YouTube" search_/>
+                </form>
+                <form class="searchForm search_2" method="get" action="https://en.wikipedia.org/w/index.php">
+                    <input class="searchBar search_2_i search_wikipedia" type="text" name="search" placeholder="Wikipedia" search_/>
+                </form>
+
+                <div class="dotstyle dotstyle-fillup">
+                    <ul>
+                        <li id="dot_0" onclick="selectSearch(0);" class="current" ><a href="#">Google</a></li>
+                        <li id="dot_1" onclick="selectSearch(1);"><a href="#">YouTube</a></li>
+                        <li id="dot_2" onclick="selectSearch(2);"><a href="#">Wikipedia</a></li>
+                    </ul>
+                </div>      
+			</div>
+            <div class="d1x1">
+                <h1 class="bracket">School</h1>                
+                <a href="https://docs.google.com/document/u/0/">Docs</a> <br />
+                <a href="https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG">MyConcordia</a> <br />
+                <a href="http://www.anthromatters.com/">Anthromaters</a> <br />
+		<a href="https://globalorders.wordpress.com/">globalorders</a> <br />
+		<a href="http://library.concordia.ca/">Concordia Library</a> <br />
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Mail</h1>
+                <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a> <br />
+                <a href="https://mail.google.com/mail/u/1/#inbox">School Email</a> <br />
+		<A href="https://mail.protonmail.com/inbox">protonmail</a> <br />
+                
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Media</h1>
+                <a href="https://www.reddit.com/">reddit</a> <br />
+                <a href="http://www.4chan.org/">4chan</a> <br />
+                <a href="https://www.youtube.com/">youtube</a> <br />
+                <a href="https://www.netflix.com/">netflix</a> <br /> 
+		<a href="http://www2.animeland.tv/">animeland</a> <br />
+		<a href="http://cricfree.tv/">cricfree</a> <br /> 
+		<a href="https://tv.bell.ca/home">bell tv</a> <br />              
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Network</h1>
+                <a href="http://192.168.1.5">Stream</a> <br />
+                <a href="http://192.168.1.1">Router</a> <br/>
+                <a href="http://192.168.2.1">Bell router</a> <br />
+                <a href="http://192.168.1.129/admin">DNS</a> <br /> 
+		<a href="http://192.168.1.101">NAS</a> <br />        
+            </div>
+        
+            <div class="d1x1">
+                <h1 class="bracket">Hosting</h1>
+                <a href="https://www.digitalocean.com/">Digitalocean</a> <br />
+                <a href="https://www.cloudflare.com/">cloudflare</a> <br />
+                <a href="https://www.namecheap.com/">namecheap</a> <br />
+		<a href="https://www.noip.com/">no-ip</a>  <br />
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Dev</h1>
+                <a href="https://github.com/chadowmari16">github</a> <br />
+                <a href="https://extensions.gnome.org/">gnome extensions</a> <br />        
+            </div>
+                        
+            <div class="d1x1">
+                <h1 class="bracket">Shop</h1>
+                <a href="https://www.amazon.ca/">Amazon</a> <br />
+                <a href="http://www.ebay.ca/">Ebay</a> <br />
+                <a href="http://www.newegg.ca/">Newegg</a> <br />
+		<a href="http://www.kijiji.ca/">kijiji</a> <br /> 
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Torrent</h1>
+                <a href="https://thepiratebay.se/">TPB</a> <br />
+                <a href="http://rarbg.to/index8.php">Rarbg</a> <br />
+                <a href="http://extratorrent.cc/">Extratorrent</a> <br />
+		<a href="http://1337x.to/">l337x</a> <br />	
+                <a href="https://yts.ag/">yts</a>  <br />
+		<a href="https://123movies.is">123movies</a> <br />
+
+            </div>
+            
+
+        
+            <div class="d1x1">
+                <h1 class="bracket">News</h1>
+                <a href="http://www.linuxtoday.com/">Linuxtoday</a> <br />
+                <a href="http://www.omgubuntu.co.uk/">Omgubuntu</a> <br />
+                <a href="https://distrowatch.com/">Distrowatch</a> <br />
+		<a href="https://torrentfreak.com/">TorrentFreak</a> <br />
+		<a href="http://arstechnica.com/">Arstechnica</a>    <br />
+		<a href="https://news.google.com/">google news</a>   <br />
+		
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Cooking</h1>
+                <a href="http://cuisinefuteeparentspresses.telequebec.tv/recettes">Parent futee</a> <br />
+		<a href="http://www.troisfoisparjour.com">troisfoisparjour</a> <br />
+		<a href="http://allrecipes.com/">allrecipes</a> <br />
+		<a href="http://www.shutupandeat.ca/">Shutupandeat</a> <br />
+                        
+            </div>
+                        
+            <div class="d1x1">
+                <h1 class="bracket">TV/Movie</h1>
+                <a href="http://www.aintitcool.com/">Aintitcool</a> <br /> 
+		<a href="http://www.imdb.com/">IMDB</a> <br />
+		<a href="http://www.boxofficemojo.com/">Boxofficemojo</a> <br /> 
+            </div>
+            
+            <div class="d1x1">
+                <h1 class="bracket">Misc</h1>
+                <a href="http://www.stm.info/en/info/networks/bus/local/line-129-south/56207">STM 129</a> <br />
+		<a href="https://www.google.ca/maps/@45.5163825,-73.6065395,14z">Google Maps</a> <br />
+		<a href="https://citymapper.com/montreal">Citymapper</a> <br /> 	
+		<a href="https://www.openstreetmap.org/#map=5/51.500/-0.100">OpenStreetMap</a> <br /> 	
+                <a href="https://archive.org/web/">wayback machine</a>   <br />          
+               
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="d2x1" id="todo">
+                <h1 class="bracket" style="cursor: pointer;" onclick="saveTodo();">Todo</h1>
+                    <form method="post" action="">
+                        <textarea id="todobox" name="comments">
+                        </textarea>
+                    </form>
+            </div>
+            
+            <div class="d2x1">
+                <h1> <a href="https://thepiratebay.org/top/201" class="bracket">MOVIES</a></h1>
+                <div class="d2x1Child" id="nu"></div> 
+            </div>
+            
+            <div class="d2x1">
+                <h1><a href="http://www.bbc.com/news" class="bracket">BBC</a></h1>
+                <div class="d2x1Child" id="nos"></div>
+            </div>
+            
+            <div class="d2x1">
+                <h1><a href="https://thepiratebay.org/top/205" class="bracket">TV</a></h1>
+                <div class="d2x1Child" id="tweakers"></div>
+            </div>
+            
+            <div class="d4x2" id="xkcdContainer">
+                <h1><a href="http://www.xkcd.com/" class="bracket">xkcd</a></h1>
+                <div id="xkcd"></div>
+                <div id="xkcdDate"></div>
+            </div>
+            <div class="d4x2" id="whatifContainer">
+                <h1><a href="http://what-if.xkcd.com/" class="bracket">What If?</a></h1>
+                <div id="whatif"></div>
+                <div id="whatifDate"></div>
+            </div>
+            <div class="d4x2" id="prequelContainer">
+                <h1><a href="http://www.prequeladventure.com/" class="bracket">PREQUEL</a></h1>
+                <div id="prequel"></div>
+                <div id="prequelDate"></div>
+            </div>
+            
+        </div>
+        
+        <div id="bottom-margin"></div>
+        
+        
+        
+        <!--
+            Load some js
+        -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/FeedEk.js"></script>
+       <script src="js/jquery.simpleWeather.min.js"></script>  
+        
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+ var date = new Date();
+            var hour = date.getHours();
+            var bgpath = "img/";
+            if ( hour > 6 && hour < 18 ) {
+                var bgd = [ 'bgd1', 'bgd2', 'bgd3', 'bgd4', 'bgd5', 'bgd6', 'bgd7', 'bgd8', 'bgd9', 'bgd10', 'bgd11', 'bgd12', 'bgd12' ];
+                var bgd = bgd[Math.floor(Math.random() * bgd.length)];
+                document.querySelector('.bg').classList.add(bgd);
+                bgpath += bgd;
+            }
+            else {
+                var bgn = [ 'bgn1', 'bgn2', 'bgn3', 'bgn4', 'bgn5', 'bgn6', 'bgn7', 'bgn8', 'bgn9', 'bgn10', 'bgn11', 'bgn12', 'bgn13', 'bgn14', 'bgn15' ];
+                var bgn = bgn[Math.floor(Math.random() * bgn.length)];
+                document.querySelector('.bg').classList.add(bgn);
+                bgpath += bgn;
+            }
+            bgpath += ".jpg";
+            
+            var image = document.createElement("img");
+            image.id = "bgimg";
+            image.src = bgpath;
+            
+            // Chrome color
+            var rgb;
+            image.onload = function() {
+                        rgb = getAverageRGB(image);
+                        var meta = document.createElement('meta');
+                        meta.name = "theme-color";
+                        meta.content = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
+                        document.getElementsByTagName('head')[0].appendChild(meta);
+            }
+            
+            // Header title
+			if ( hour >= 3 && hour < 10 ) {
+				document.getElementById("titletext").innerHTML = "Good morning!";
+			}
+			if ( hour >= 10 && hour < 18 ) {
+				document.getElementById("titletext").innerHTML = "Hello!";
+			}
+			if ( hour >= 18 || hour < 3 ) {
+				document.getElementById("titletext").innerHTML = "Good evening!";
+			}
+        </script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    </body>
+</html>
